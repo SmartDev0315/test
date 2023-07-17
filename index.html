@@ -1,0 +1,409 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <p class="title_text">Invoices</p>
+        <div class="btn_group">
+          <button class="btn_export">
+            <img src="./assets/Arrow.svg" />
+            <p>Export</p>
+          </button>
+          <button class="btn_new">
+            + New
+          </button>
+          <button class="btn_filter">
+            <img src="./assets/Filter.svg" />
+          </button>
+          <button class="btn_more">
+            <img src="./assets/More.svg" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="content">
+        <div class="content_table">
+          <div class="pagination">
+            <div class="per_page">
+              <p class="page_num">Result Per Page</p>
+              <select class="page_count">
+                <option>5</option>
+                <option>10</option>
+                <option selected>20</option>
+              </select>
+            </div>
+            <div class="current_page">
+              <a href="#">
+                <img src="./assets/Left.svg" />
+              </a>
+              <a class="active" href="#">1</a>
+              <a href="#">
+                <img src="./assets/Right.svg" />
+              </a>
+            </div>
+            <div class="per_page">
+              <p class="page_num">Page</p>
+              <select class="page_count">
+                <option>5</option>
+                <option>10</option>
+                <option selected>20</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="invoice_table">
+            <div class="table_header">
+              <p class="table_check">
+                <input type="checkbox" checked />
+              </p>
+              <p>Type</p>
+              <p>Date</p>
+              <p>Customer</p>
+              <p>Location</p>
+              <p>State</p>
+              <p class="header_total">Total</p>
+              <p></p>
+            </div>
+
+            <div class="table_content">
+              <div class="content_style">
+                <p class="table_check">
+                  <input type="checkbox" />
+                </p>
+                <div class="table_type">
+                  <p class="type_title">Receipt</p>
+                  <p class="type_content">#100048</p>
+                </div>
+                <p class="center_style">21.10.2022</p>
+                <p class="center_style">Lydia Dias</p>
+                <p class="center_style">Location #12</p>
+                <div class="center_style">
+                  <div class="progress">
+                    <img src="./assets/progress.png" />
+                    <p class="state_text">IN PROGRESS</p>
+                  </div>
+                </div>
+                <p class="content_total">129.00 €</p>
+                <p class="table_check">
+                  <img src="./assets/More.svg" />
+                </p>
+              </div>
+              <div class="content_style">
+                <p class="table_check">
+                  <input type="checkbox" />
+                </p>
+                <div class="table_type">
+                  <p class="type_title">Receipt</p>
+                  <p class="type_content">#100048</p>
+                </div>
+                <div class="due_style">
+                  <p class="no_margin">21.10.2022</p>
+                  <p class="due_text">DUE 2 DAYS AGO</p>
+                </div>
+                <p class="center_style">Livia Siphron</p>
+                <p class="center_style">Location #12</p>
+                <div class="center_style">
+                  <div class="pending">
+                    <img src="./assets/pending.png" />
+                    <p class="state_text">PENDING</p>
+                  </div>
+                </div>
+                <div class="unpaid_style">
+                  <p class="no_margin">4147.20 €</p>
+                  <p class="unpaid_text">UNPAID 200.29 €</p>
+                </div>
+                <p class="table_check">
+                  <img src="./assets/More.svg" />
+                </p>
+              </div>
+              <div class="content_style">
+                <p class="table_check">
+                  <input type="checkbox" />
+                </p>
+                <div class="table_type">
+                  <p class="type_title">Invoice-Waybill</p>
+                  <p class="type_content">#100048</p>
+                </div>
+                <p class="center_style">21.10.2022</p>
+                <p class="center_style">Tatiana George</p>
+                <p class="center_style">Location #12</p>
+                <div class="center_style">
+                  <div class="success">
+                    <img src="./assets/success.png" />
+                    <p class="state_text">SUCCESS</p>
+                  </div>
+                </div>
+                <p class="content_total">129.00 €</p>
+                <p class="table_check">
+                  <img src="./assets/More.svg" />
+                </p>
+              </div>
+              <div class="content_style1">
+                <p class="table_check">
+                  <input type="checkbox" checked />
+                </p>
+                <div class="table_type">
+                  <p class="type_title">Invoice-Waybill</p>
+                  <p class="type_content">#100048</p>
+                </div>
+                <p class="center_style">21.10.2022</p>
+                <p class="center_style">Dulce Lipshutz</p>
+                <p class="center_style">Location #12</p>
+                <div class="center_style">
+                  <div class="complete">
+                    <img src="./assets/pending.png" />
+                    <p class="state_text">COMPLETE</p>
+                  </div>
+                </div>
+                <p class="content_total">129.00 €</p>
+                <p class="table_check">
+                  <img src="./assets/More.svg" />
+                </p>
+              </div>
+              <div class="content_style">
+                <p class="table_check">
+                  <input type="checkbox" />
+                </p>
+                <div class="table_type">
+                  <p class="type_title">Prepayment inv.</p>
+                  <p class="type_content">#100048</p>
+                </div>
+                <p class="center_style">21.10.2022</p>
+                <p class="center_style">Paityn Philips</p>
+                <p class="center_style">Location #12</p>
+                <div class="center_style">
+                  <div class="progress">
+                    <img src="./assets/progress.png" />
+                    <p class="state_text">IN PROGRESS</p>
+                  </div>
+                </div>
+                <p class="content_total">129.00 €</p>
+                <p class="table_check">
+                  <img src="./assets/More.svg" />
+                </p>
+              </div>
+              <div class="content_style1">
+                <p class="table_check">
+                  <input type="checkbox" checked />
+                </p>
+                <div class="table_type">
+                  <p class="type_title">Prepayment inv.</p>
+                  <p class="type_content">#100048</p>
+                </div>
+                <p class="center_style">21.10.2022</p>
+                <p class="center_style">Jordyn Mango</p>
+                <p class="center_style">Location #12</p>
+                <div class="center_style">
+                  <div class="pending">
+                    <img src="./assets/pending.png" />
+                    <p class="state_text">PENDING</p>
+                  </div>
+                </div>
+                <p class="content_total">129.00 €</p>
+                <p class="table_check">
+                  <img src="./assets/More.svg" />
+                </p>
+              </div>
+              <div class="content_style">
+                <p class="table_check">
+                  <input type="checkbox" />
+                </p>
+                <div class="table_type">
+                  <p class="type_title">Receipt</p>
+                  <p class="type_content">#100048</p>
+                </div>
+                <div class="due_style">
+                  <p class="no_margin">21.10.2022</p>
+                  <p class="due_text">DUE 2 DAYS AGO</p>
+                </div>
+                <p class="center_style">Paityn Workman</p>
+                <p class="center_style">Location #12</p>
+                <div class="center_style">
+                  <div class="success">
+                    <img src="./assets/success.png" />
+                    <p class="state_text">SUCCESS</p>
+                  </div>
+                </div>
+                <p class="content_total">129.00 €</p>
+                <p class="table_check">
+                  <img src="./assets/More.svg" />
+                </p>
+              </div>
+              <div class="content_style">
+                <p class="table_check">
+                  <input type="checkbox" />
+                </p>
+                <div class="table_type">
+                  <p class="type_title">Receipt</p>
+                  <p class="type_content">#100048</p>
+                </div>
+                <div class="due_style">
+                  <p class="no_margin">21.10.2022</p>
+                  <p class="due_text">DUE 2 DAYS AGO</p>
+                </div>
+                <p class="center_style">Davis Dorwart</p>
+                <p class="center_style">Location #12</p>
+                <div class="center_style">
+                  <div class="complete">
+                    <img src="./assets/pending.png" />
+                    <p class="state_text">COMPLETE</p>
+                  </div>
+                </div>
+                <p class="content_total">129.00 €</p>
+                <p class="table_check">
+                  <img src="./assets/More.svg" />
+                </p>
+              </div>
+              <div class="content_style">
+                <p class="table_check">
+                  <input type="checkbox" />
+                </p>
+                <div class="table_type">
+                  <p class="type_title">Receipt</p>
+                  <p class="type_content">#100048</p>
+                </div>
+                <p class="center_style">21.10.2022</p>
+                <p class="center_style">Craig Workman</p>
+                <p class="center_style">Location #12</p>
+                <div class="center_style">
+                  <div class="complete">
+                    <img src="./assets/pending.png" />
+                    <p class="state_text">COMPLETE</p>
+                  </div>
+                </div>
+                <p class="content_total">129.00 €</p>
+                <p class="table_check">
+                  <img src="./assets/More.svg" />
+                </p>
+              </div>
+              <div class="content_style">
+                <p class="table_check">
+                  <input type="checkbox" />
+                </p>
+                <div class="table_type">
+                  <p class="type_title">Receipt</p>
+                  <p class="type_content">#100048</p>
+                </div>
+                <p class="center_style">21.10.2022</p>
+                <p class="center_style">Alfredo George</p>
+                <p class="center_style">Location #12</p>
+                <div class="center_style">
+                  <div class="complete">
+                    <img src="./assets/pending.png" />
+                    <p class="state_text">COMPLETE</p>
+                  </div>
+                </div>
+                <p class="content_total">129.00 €</p>
+                <p class="table_check">
+                  <img src="./assets/More.svg" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="customers">
+          <div class="add_customer">
+            <p class="customer_text">Customers</p>
+            <button class="btn_add">
+              <img src="./assets/Person.png" />
+              <p class="add_text">Add</p>
+            </button>
+          </div>
+          <div class="atoz">
+            ABCDEFGHIJKLMNOPQRSTUVWXYZ
+          </div>
+          <div class="search_area">
+            <input type="text" class="search_text">
+              <img src="./assets/Search.png" class="search_img" />
+            </input>
+            <button class="btn_search">
+              <p class="btn_search_text">Search</p>
+            </button>
+          </div>
+          <div class="companies">
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Marathon Oil Corp.</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Sealed Air</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Southern Company</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Atmos Energy</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Equifax Inc.</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Kansas City Southern</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Fidelity National Information Services</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Colgate-Palmolive</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Air Products & Chemicals Inc</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Intuitive Surgical Inc.</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Quest Diagnostics</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Crown Castle International Corp.</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">News Corp. Class A</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Federal Realty Investment Trust</p>
+            </div>
+            <div class="company_item">
+              <img src="./assets/company.png" />
+              <p class="company_name">Humana Inc.</p>
+            </div>
+          </div>
+          <div class="import_customer">
+            <div class="import_title">
+              <p class="import_text">Add Customers</p>
+              <img src="./assets/Close.png" />
+            </div>
+            <div class="import_content">
+              You can add customers by pessing the Add + button in the corner or by importing your clients from a CSV file
+            </div>
+            <div class="import_btn">
+              <img src="./assets/Cloud.png" />
+              <p class="import_btn_text">Import customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
